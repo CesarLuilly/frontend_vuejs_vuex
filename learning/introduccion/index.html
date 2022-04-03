@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Intro to Vuejs</title>
+</head>
+<body>
+    <!-- Script recuperado de la pagina oficial de Vuejs. -->
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">
+        <!-- Binding es para mandarle el parametro a Vue -->
+        <!-- v-bind: es lo mismo que poner : -->
+        <img v-bind:src="foto" alt="Foto" :class="genero">
+        <h1>{{nombre}} {{apellido}}</h1>
+        <h3>Email: {{email}}</h3>
+        <!-- v-on es la manera de mandalar a llamar funciones. -->
+        <button v-on:click="cambiarUsuario(); imprimirAlgo();" :class="genero">Tener un usuario random</button>
+    </div>
+
+    <h1> {{ message }} </h1>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
