@@ -1,1 +1,1 @@
-# frontend_vuejs_vuex
+# VueJS & VueX
